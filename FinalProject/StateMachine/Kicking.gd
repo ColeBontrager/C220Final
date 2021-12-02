@@ -8,7 +8,7 @@ func _ready():
 
 func start():
 	player.set_animation("Kicking")
-	if Input.is_action_pressed("kick"):
+	if Input.is_action_pressed("kick"+str(player.action)):
 		player.moves.append("kick")
 	else:
 		player.moves =[]

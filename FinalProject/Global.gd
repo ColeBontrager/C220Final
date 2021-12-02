@@ -9,8 +9,8 @@ onready var Game = load("res://Game.tscn")
 
 var player1_health = 100.0
 var player1_maxhealth = 100.0
-var player2_health = 400.0
-var player2_maxhealth = 400.0
+var player2_health = 100.0
+var player2_maxhealth = 100.0
 
 var save_data = {
 	"general": {

@@ -10,7 +10,7 @@ func _ready():
 
 func start():
 	player.set_animation("Punching")
-	if Input.is_action_pressed("punch"):
+	if Input.is_action_pressed("punch"+str(player.action)):
 		player.moves.append("punch")
 	else:
 		player.moves =[]

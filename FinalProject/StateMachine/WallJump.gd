@@ -50,7 +50,7 @@ func physics_process(delta):
 		player.set_wall_raycasts(false)
 		SM.set_state("Falling")
 	
-	if Input.is_action_just_pressed("jump"):
+	if Input.is_action_just_pressed("jump"+str(player.action)):
 		var x = walljump_x_vel
 		if player_animsprite.flip_h:
 			x = -x

@@ -15,181 +15,182 @@
 [sub_resource type="AtlasTexture" id=1]
 flags = 4
 atlas = ExtResource( 1 )
-region = Rect2( 440, 110, 110, 110 )
+region = Rect2( 440, 880, 110, 110 )
 
 [sub_resource type="AtlasTexture" id=2]
 flags = 4
 atlas = ExtResource( 1 )
-region = Rect2( 550, 110, 110, 110 )
+region = Rect2( 550, 880, 110, 110 )
 
 [sub_resource type="AtlasTexture" id=3]
 flags = 4
 atlas = ExtResource( 1 )
-region = Rect2( 660, 110, 110, 110 )
+region = Rect2( 660, 880, 110, 110 )
 
 [sub_resource type="AtlasTexture" id=4]
 flags = 4
 atlas = ExtResource( 1 )
-region = Rect2( 0, 110, 110, 110 )
+region = Rect2( 440, 110, 110, 110 )
 
 [sub_resource type="AtlasTexture" id=5]
 flags = 4
 atlas = ExtResource( 1 )
-region = Rect2( 110, 110, 110, 110 )
+region = Rect2( 550, 110, 110, 110 )
 
 [sub_resource type="AtlasTexture" id=6]
 flags = 4
 atlas = ExtResource( 1 )
-region = Rect2( 220, 110, 110, 110 )
+region = Rect2( 660, 110, 110, 110 )
 
 [sub_resource type="AtlasTexture" id=7]
 flags = 4
 atlas = ExtResource( 1 )
-region = Rect2( 330, 110, 110, 110 )
+region = Rect2( 660, 330, 110, 110 )
 
 [sub_resource type="AtlasTexture" id=8]
 flags = 4
 atlas = ExtResource( 1 )
-region = Rect2( 440, 110, 110, 110 )
+region = Rect2( 0, 440, 110, 110 )
 
 [sub_resource type="AtlasTexture" id=9]
 flags = 4
 atlas = ExtResource( 1 )
-region = Rect2( 550, 110, 110, 110 )
+region = Rect2( 0, 330, 110, 110 )
 
 [sub_resource type="AtlasTexture" id=10]
 flags = 4
 atlas = ExtResource( 1 )
-region = Rect2( 660, 110, 110, 110 )
+region = Rect2( 110, 330, 110, 110 )
 
 [sub_resource type="AtlasTexture" id=11]
 flags = 4
 atlas = ExtResource( 1 )
-region = Rect2( 0, 330, 110, 110 )
+region = Rect2( 220, 330, 110, 110 )
 
 [sub_resource type="AtlasTexture" id=12]
 flags = 4
 atlas = ExtResource( 1 )
-region = Rect2( 110, 330, 110, 110 )
+region = Rect2( 110, 220, 110, 110 )
 
 [sub_resource type="AtlasTexture" id=13]
 flags = 4
 atlas = ExtResource( 1 )
-region = Rect2( 220, 330, 110, 110 )
+region = Rect2( 0, 110, 110, 110 )
 
 [sub_resource type="AtlasTexture" id=14]
 flags = 4
 atlas = ExtResource( 1 )
-region = Rect2( 110, 220, 110, 110 )
+region = Rect2( 110, 110, 110, 110 )
 
 [sub_resource type="AtlasTexture" id=15]
 flags = 4
 atlas = ExtResource( 1 )
-region = Rect2( 440, 880, 110, 110 )
+region = Rect2( 220, 110, 110, 110 )
 
 [sub_resource type="AtlasTexture" id=16]
 flags = 4
 atlas = ExtResource( 1 )
-region = Rect2( 550, 880, 110, 110 )
+region = Rect2( 330, 110, 110, 110 )
 
 [sub_resource type="AtlasTexture" id=17]
 flags = 4
 atlas = ExtResource( 1 )
-region = Rect2( 660, 880, 110, 110 )
+region = Rect2( 440, 110, 110, 110 )
 
 [sub_resource type="AtlasTexture" id=18]
 flags = 4
 atlas = ExtResource( 1 )
-region = Rect2( 0, 0, 110, 110 )
+region = Rect2( 550, 110, 110, 110 )
 
 [sub_resource type="AtlasTexture" id=19]
 flags = 4
 atlas = ExtResource( 1 )
-region = Rect2( 110, 0, 110, 110 )
+region = Rect2( 660, 110, 110, 110 )
 
 [sub_resource type="AtlasTexture" id=20]
 flags = 4
 atlas = ExtResource( 1 )
-region = Rect2( 220, 0, 110, 110 )
+region = Rect2( 0, 0, 110, 110 )
 
 [sub_resource type="AtlasTexture" id=21]
 flags = 4
 atlas = ExtResource( 1 )
-region = Rect2( 330, 0, 110, 110 )
+region = Rect2( 110, 0, 110, 110 )
 
 [sub_resource type="AtlasTexture" id=22]
 flags = 4
 atlas = ExtResource( 1 )
-region = Rect2( 440, 0, 110, 110 )
+region = Rect2( 220, 0, 110, 110 )
 
 [sub_resource type="AtlasTexture" id=23]
 flags = 4
 atlas = ExtResource( 1 )
-region = Rect2( 550, 0, 110, 110 )
+region = Rect2( 330, 0, 110, 110 )
 
 [sub_resource type="AtlasTexture" id=24]
 flags = 4
 atlas = ExtResource( 1 )
-region = Rect2( 660, 330, 110, 110 )
+region = Rect2( 440, 0, 110, 110 )
 
 [sub_resource type="AtlasTexture" id=25]
 flags = 4
 atlas = ExtResource( 1 )
-region = Rect2( 0, 440, 110, 110 )
+region = Rect2( 550, 0, 110, 110 )
 
 [sub_resource type="SpriteFrames" id=26]
 animations = [ {
 "frames": [ SubResource( 1 ), SubResource( 2 ), SubResource( 3 ) ],
-"loop": false,
-"name": "Falling",
-"speed": 5.0
-}, {
-"frames": [ SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ) ],
-"loop": false,
-"name": "Jumping",
-"speed": 8.0
-}, {
-"frames": [ SubResource( 11 ), SubResource( 12 ), SubResource( 13 ) ],
-"loop": true,
-"name": "Punching",
-"speed": 6.0
-}, {
-"frames": [ SubResource( 14 ) ],
-"loop": true,
-"name": "Crouching",
-"speed": 5.0
-}, {
-"frames": [ SubResource( 15 ), SubResource( 16 ), SubResource( 17 ) ],
 "loop": true,
 "name": "Idle",
 "speed": 5.0
 }, {
-"frames": [ SubResource( 18 ), SubResource( 19 ), SubResource( 20 ), SubResource( 21 ), SubResource( 22 ), SubResource( 23 ) ],
-"loop": true,
-"name": "Moving",
+"frames": [ SubResource( 4 ), SubResource( 5 ), SubResource( 6 ) ],
+"loop": false,
+"name": "Falling",
 "speed": 5.0
 }, {
-"frames": [ SubResource( 24 ), SubResource( 25 ) ],
+"frames": [ SubResource( 7 ), SubResource( 8 ) ],
 "loop": true,
 "name": "Kicking",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 9 ), SubResource( 10 ), SubResource( 11 ) ],
+"loop": true,
+"name": "Punching",
+"speed": 6.0
+}, {
+"frames": [ SubResource( 12 ) ],
+"loop": true,
+"name": "Crouching",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 13 ), SubResource( 14 ), SubResource( 15 ), SubResource( 16 ), SubResource( 17 ), SubResource( 18 ), SubResource( 19 ) ],
+"loop": false,
+"name": "Jumping",
+"speed": 8.0
+}, {
+"frames": [ SubResource( 20 ), SubResource( 21 ), SubResource( 22 ), SubResource( 23 ), SubResource( 24 ), SubResource( 25 ) ],
+"loop": true,
+"name": "Moving",
 "speed": 5.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=27]
-extents = Vector2( 29.1478, 52.5788 )
+extents = Vector2( 27.691, 46.51 )
 
 [node name="Player" type="KinematicBody2D"]
 position = Vector2( 200, 200 )
+collision_mask = 30
 script = ExtResource( 9 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 26 )
-animation = "Kicking"
+animation = "Idle"
 playing = true
 offset = Vector2( 0, 11 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 8.13176, 6.06065 )
+position = Vector2( 8.132, 12.15 )
 shape = SubResource( 27 )
 
 [node name="Attack" type="Node2D" parent="."]
@@ -198,13 +199,13 @@ shape = SubResource( 27 )
 position = Vector2( 0.707108, -21.5668 )
 enabled = true
 cast_to = Vector2( 50, 0 )
-collision_mask = 30
+collision_mask = 2
 
 [node name="Kick" type="RayCast2D" parent="Attack"]
 position = Vector2( 3.18199, -10.6066 )
 enabled = true
 cast_to = Vector2( 50, 0 )
-collision_mask = 30
+collision_mask = 2
 
 [node name="Floor" type="Node2D" parent="."]
 position = Vector2( -0.353561, 2.82846 )

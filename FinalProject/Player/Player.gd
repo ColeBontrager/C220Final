@@ -27,30 +27,43 @@ export var punch = 10
 
 export var kick = 15
 
+export var action = 1
 
 var moves = []
 
+func _ready():
+	if action == 2:
+		direction = -1
+		
 func _physics_process(_delta):
 	velocity.x = clamp(velocity.x,-max_move,max_move)
 		
 	if should_direction_flip:
 		if direction < 0 and not $AnimatedSprite.flip_h: $AnimatedSprite.flip_h = true
 		if direction > 0 and $AnimatedSprite.flip_h: $AnimatedSprite.flip_h = false
-	print(moves)
+		var kick = get_node("Attack/Kick")
+		var punch = get_node("Attack/Punch")
+		if direction == 1:
+			kick.rotation_degrees = 0
+			punch.rotation_degrees = 0
+		else:
+			kick.rotation_degrees = 180
+			punch.rotation_degrees = 180
+	#print(moves)
 
 
 func is_moving():
-	if Input.is_action_pressed("left") or Input.is_action_pressed("right"):
+	if Input.is_action_pressed("left"+str(action)) or Input.is_action_pressed("right"+str(action)):
 		return true
 	return false
 
 func move_vector():
-	return Vector2(Input.get_action_strength("right") - Input.get_action_strength("left"),1.0)
+	return Vector2(Input.get_action_strength("right"+str(action)) - Input.get_action_strength("left"+str(action)),1.0)
 
 func _unhandled_input(event):
-	if event.is_action_pressed("left"):
+	if event.is_action_pressed("left"+str(action)):
 		direction = -1
-	if event.is_action_pressed("right"):
+	if event.is_action_pressed("right"+str(action)):
 		direction = 1
 
 func set_animation(anim):
@@ -69,6 +82,12 @@ func is_on_floor():
 func die():
 	queue_free()
 
+func damage(damage):
+	print(damage)
+	if action == 1:
+		Global.player1_health -= damage
+	else:
+		Global.player2_health -= damage
 
 func _on_AnimatedSprite_animation_finished():
 	animating = false
