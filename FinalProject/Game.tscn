@@ -1,13 +1,14 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://icon.png" type="Texture" id=1]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Assets/PressStart2P-Regular.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://UI/Text.tres" type="DynamicFont" id=4]
 [ext_resource path="res://UI/HUD.gd" type="Script" id=5]
-[ext_resource path="res://Assets/music.ogg" type="AudioStream" id=6]
+[ext_resource path="res://Assets/poisons_theme.ogg" type="AudioStream" id=6]
 [ext_resource path="res://UI/End.gd" type="Script" id=7]
 [ext_resource path="res://Player/Player2.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Assets/lab.jpeg" type="Texture" id=9]
 [ext_resource path="res://UI/Start.gd" type="Script" id=10]
 [ext_resource path="res://UI/Countdown.gd" type="Script" id=11]
 
@@ -62,9 +63,7 @@ bg_color = Color( 0, 0, 0, 0.501961 )
 
 [node name="Game" type="Node2D"]
 
-[node name="Player_Container" type="Node2D" parent="." groups=[
-"save",
-]]
+[node name="Player_Container" type="Node2D" parent="." groups=["save"]]
 
 [node name="Player" parent="Player_Container" instance=ExtResource( 2 )]
 position = Vector2( 284.949, 517.142 )
@@ -198,6 +197,17 @@ text = "<:Left
 align = 1
 valign = 1
 
+[node name="Background" type="TextureRect" parent="."]
+margin_left = 18.0
+margin_top = 4.0
+margin_right = 988.0
+margin_bottom = 754.0
+texture = ExtResource( 9 )
+stretch_mode = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="End" type="Control" parent="."]
 pause_mode = 2
 visible = false
@@ -249,9 +259,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="HUD" type="CanvasLayer" parent="." groups=[
-"save",
-]]
+[node name="HUD" type="CanvasLayer" parent="." groups=["save"]]
 script = ExtResource( 5 )
 
 [node name="Panel" type="Panel" parent="HUD"]
