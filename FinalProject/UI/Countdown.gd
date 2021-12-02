@@ -23,5 +23,5 @@ func _on_CountdownTimer_timeout():
 	else:
 		get_node_or_null("/root/Game/HUD/Panel/Timer").start()
 		Global.input_active = true
-		queue_free()
+		get_parent().queue_free()
 		

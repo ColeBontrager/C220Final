@@ -62,9 +62,9 @@ func end_game():
 	end.show()
 	input_active = false
 	if player1_health < player2_health:
-		end.get_child(1).text = "PLAYER 2 WON"
+		end.get_child(2).text = "PLAYER 2 WON"
 	else:
-		end.get_child(1).text = "PLAYER 1 WON"
+		end.get_child(2).text = "PLAYER 1 WON"
 		
 		
 
