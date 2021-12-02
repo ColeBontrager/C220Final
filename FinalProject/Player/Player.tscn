@@ -14,24 +14,24 @@
 [ext_resource path="res://Player/KO.gd" type="Script" id=12]
 [ext_resource path="res://Player/Poison.gd" type="Script" id=13]
 
-[sub_resource type="RectangleShape2D" id=27]
+[sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 27.691, 46.51 )
 
 [node name="Player" type="KinematicBody2D"]
 position = Vector2( 200, 200 )
-collision_mask = 30
+collision_mask = 22
 script = ExtResource( 9 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+z_index = 1
 frames = ExtResource( 1 )
 animation = "Poison"
 frame = 2
-playing = true
 offset = Vector2( 0, 11 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 8.132, 12.15 )
-shape = SubResource( 27 )
+shape = SubResource( 1 )
 
 [node name="Attack" type="Node2D" parent="."]
 

@@ -24,6 +24,8 @@ func physics_process(_delta):
 		SM.set_state("Punching")
 	if Input.is_action_just_pressed("kick"+str(player.action)):
 		SM.set_state("Kicking")
+	if Input.is_action_just_pressed("poison"+str(player.action)):
+		SM.set_state("Poison")
 	if player.is_moving():
 		if player.direction != prev_direction:
 			player.velocity.x = 0
