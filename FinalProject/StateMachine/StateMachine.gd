@@ -9,15 +9,15 @@ func _ready():
 		set_state(get_children()[0].name)
 
 func _physics_process(delta):
-	if state and state.has_method("physics_process"):
+	if state and state.has_method("physics_process") and Global.input_active:
 		state.physics_process(delta)
 
 func _process(delta):
-	if state and state.has_method("process"):
+	if state and state.has_method("process") and Global.input_active:
 		state.process(delta)
 
 func _unhandled_input(event):
-	if state and state.has_method("unhandled_input"):
+	if state and state.has_method("unhandled_input") and Global.input_active:
 		state.unhandled_input(event)
 
 func set_state(s):

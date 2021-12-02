@@ -22,8 +22,8 @@ func physics_process(_delta):
 			print("punching")
 			if punch_sound == null:
 				punch_sound = get_node_or_null("root/Player/punch")
-			if $punch_sound != null:
-				$punch_sound.play()
+			if punch_sound != null:
+				punch_sound.play()
 			var enemy = punch.get_collider()
 			if enemy.has_method("damage"):
 				enemy.damage(player.punch)

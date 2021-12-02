@@ -61,9 +61,9 @@ func move_vector():
 	return Vector2(Input.get_action_strength("right"+str(action)) - Input.get_action_strength("left"+str(action)),1.0)
 
 func _unhandled_input(event):
-	if event.is_action_pressed("left"+str(action)):
+	if event.is_action_pressed("left"+str(action)) and Global.input_active:
 		direction = -1
-	if event.is_action_pressed("right"+str(action)):
+	if event.is_action_pressed("right"+str(action)) and Global.input_active:
 		direction = 1
 
 func set_animation(anim):
@@ -83,11 +83,11 @@ func die():
 	queue_free()
 
 func damage(damage):
-	print(damage)
-	if action == 1:
-		Global.player1_health -= damage
-	else:
-		Global.player2_health -= damage
+	Global.update_damage(damage, action)
+	if action == 1 and Global.player1_health <= 0:
+		SM.set_state("KO")
+	if action == 2 and Global.player2_health <= 0:
+		SM.set_state("KO")
 
 func _on_AnimatedSprite_animation_finished():
 	animating = false

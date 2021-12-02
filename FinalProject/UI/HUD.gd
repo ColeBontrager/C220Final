@@ -13,5 +13,8 @@ func _physics_process(delta):
 
 
 func _on_Timer_timeout():
-	countdown -= 1
-	$Panel/Time.text = str(countdown)
+	if countdown > 0:
+		countdown -= 1
+		$Panel/Time.text = str(countdown)
+	else:
+		Global.end_game()

@@ -5,12 +5,15 @@ const SAVE_PATH = "res://settings.cfg"
 
 onready var HUD = get_node_or_null("/root/Game/UI/HUD")
 onready var Enemies = get_node_or_null("/root/Game/Enemy_Container")
+onready var end = get_node_or_null("/root/Game/End")
 onready var Game = load("res://Game.tscn")
 
 var player1_health = 100.0
 var player1_maxhealth = 100.0
 var player2_health = 100.0
 var player2_maxhealth = 100.0
+
+var input_active = false
 
 var save_data = {
 	"general": {
@@ -45,11 +48,23 @@ func load_game():
 	var _scene = get_tree().change_scene_to(Game)
 	call_deferred("restart_level")
 
+func update_damage(damage, player):
+	if player == 1:
+		player1_health -= damage
+	elif player == 2:
+		player2_health -= damage
+	if player1_health <= 0 || player2_health <= 0:
+		end_game()
 
-
-
-func _unhandled_input(event):
-	if event.is_action_pressed("quit"):
-		get_tree().quit()
+func end_game():
+	end = get_node_or_null("/root/Game/End")
+	get_node_or_null("/root/Game/HUD/Panel/Timer").stop()
+	end.show()
+	input_active = false
+	if player1_health < player2_health:
+		end.get_child(1).text = "PLAYER 2 WON"
+	else:
+		end.get_child(1).text = "PLAYER 1 WON"
+		
 		
 

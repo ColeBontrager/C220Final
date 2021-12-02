@@ -20,9 +20,9 @@ func physics_process(_delta):
 		
 	if Input.is_action_pressed("jump"+str(player.action)):
 		SM.set_state("Jumping")
-	if Input.is_action_pressed("punch"+str(player.action)):
+	if Input.is_action_just_pressed("punch"+str(player.action)):
 		SM.set_state("Punching")
-	if Input.is_action_pressed("kick"+str(player.action)):
+	if Input.is_action_just_pressed("kick"+str(player.action)):
 		SM.set_state("Kicking")
 	if player.is_moving():
 		if player.direction != prev_direction:
