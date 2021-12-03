@@ -15,7 +15,7 @@ Objective
 Players 1 and two are controlled with one keyboard, controls are listed on start screen
 
 ## Impediments
-
+originally we could not make the sprites independent
 
 ## Implementation
 Features
