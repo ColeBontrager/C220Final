@@ -23,7 +23,7 @@ Assets, or resources used
 
 ## References
 -Potion bottle sprites: https://opengameart.org/content/rpg-potions-16x16
-
+sprites property of Capcom: https://www.capcom.com/
 ## Future Development
 None
 
