@@ -63,7 +63,9 @@ bg_color = Color( 0, 0, 0, 0.501961 )
 
 [node name="Game" type="Node2D"]
 
-[node name="Player_Container" type="Node2D" parent="." groups=["save"]]
+[node name="Player_Container" type="Node2D" parent="." groups=[
+"save",
+]]
 
 [node name="Player" parent="Player_Container" instance=ExtResource( 2 )]
 position = Vector2( 284.949, 517.142 )
@@ -273,7 +275,9 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="HUD" type="CanvasLayer" parent="." groups=["save"]]
+[node name="HUD" type="CanvasLayer" parent="." groups=[
+"save",
+]]
 script = ExtResource( 5 )
 
 [node name="Panel" type="Panel" parent="HUD"]
