@@ -42,3 +42,8 @@ Davion:
 -added some assets like font for hud
 
 Blade:
+-worked on assets
+-created background
+
+
+Blade:
